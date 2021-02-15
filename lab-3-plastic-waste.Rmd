@@ -61,9 +61,12 @@ E1.  Plot, using histograms, the distribution of plastic waste per capita facete
 
 Another way of visualizing numerical data is using density plots.
 
-```{r plastic_waste_per_cap-dens}
-ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
-  geom_density()
+```{r }
+ggplot(data = plastic_waste,
+mapping = aes(x = plastic_waste_per_cap,
+color = continent,
+fill = continent)) +
+geom_histogram(alpha = 0.7)
 ```
 
 And compare distributions across continents by colouring density curves by continent.
