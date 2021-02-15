@@ -5,9 +5,9 @@ date: "`r Sys.Date()`"
 output: github_document
 ---
 
-Student Name:
+Student Name: Walaa Ali
 
-Student ID:
+Student ID:2201002583
 
 ```{r include = FALSE}
 knitr::opts_chunk$set(eval = FALSE)
@@ -68,6 +68,7 @@ color = continent,
 fill = continent)) +
 geom_histogram(alpha = 0.7)
 ```
+Answer : the Africa is most density continent and the south America is the most continent in plastic wate per cap.
 
 And compare distributions across continents by colouring density curves by continent.
 
